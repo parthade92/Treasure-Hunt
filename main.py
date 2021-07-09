@@ -1,4 +1,24 @@
 print('''
+ _                                     
+| |                                    
+| |_ _ __ ___  __ _ ___ _   _ _ __ ___ 
+| __| '__/ _ \/ _` / __| | | | '__/ _ 
+| |_| | |  __/ (_| \__ \ |_| | | |  __/
+ \__|_|  \___|\__,_|___/\__,_|_|  \___|
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure")
+d1 = input("You are at a cross-road do you want to go 'left' or 'right'?\n").lower()
+if d1 == 'left':
+    d2 = input("You've reached a river, do you want to 'wait' for the boat or 'swim'?\n").lower()
+    if d2 == "wait" or "boat":
+        print("You have crossed the river and entered a house with 3 doors")
+        d3 = input("Which door do you choose: 'Red' 'Blue' or 'Yellow':\n").lower()
+        if d3 == 'red':
+            print("Game Over, You Lose.")
+        elif d3 == 'yellow':
+            print("You Win.")
+            print('''
 *******************************************************************************
           |                   |                  |                     |
  _________|________________.=""_;=.______________|_____________________|_______
@@ -17,21 +37,9 @@ ____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
 ____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
 /______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
 ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
-/______/______/______/______/______/______/______/______/______/______/_____ /
+/______/______/______/______/______/______/______/______/______/______/______/
 *******************************************************************************
-''')
-print("Welcome to Treasure Island.")
-print("Your mission is to find the treasure")
-d1 = input("You are at a cross-road do you want to go 'left' or 'right'?\n").lower()
-if d1 == 'left':
-    d2 = input("You've reached a river, do you want to 'wait' for the boat or 'swim'?\n").lower()
-    if d2 == "wait" or "boat":
-        print("You have crossed the river and entered a house with 3 doors")
-        d3 = input("Which door do you choose: 'Red' 'Blue' or 'Yellow':\n").lower()
-        if d3 == 'red':
-            print("Game Over, You Lose.")
-        elif d3 == 'yellow':
-            print("You Win.")
+             ''')
         elif d3 == 'blue':
             print("Game Over, You Lose.")
     else:
