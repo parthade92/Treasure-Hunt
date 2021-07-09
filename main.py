@@ -17,7 +17,7 @@ if d1 == 'left':
         if d3 == 'red':
             print("Game Over, You Lose.")
         elif d3 == 'yellow':
-            print("You Win.")
+            print("You Win, You've found the chest.")
             print('''
 *******************************************************************************
           |                   |                  |                     |
